@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b14">
+    <title>Privacy Policy | Tanzeel Ur Rehman</title>
+    <meta name="description"
+        content="Learn how Tanzeel Ur Rehman collects, uses, stores, and protects your personal information.">
+    <meta name="robots" content="index, follow">
+    <style>
+        :root {
+            --bg: #080b14;
+            --surface: #101522;
+            --border: rgba(148, 163, 184, .15);
+            --text: #f4f7ff;
+            --muted: #9aa7bd;
+            --accent: #55c7ff;
+            --green: #6ee7b7;
+            --container: 1160px;
+            --head: "Space Grotesk", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+            --body: "DM Sans", "Segoe UI", system-ui, -apple-system, Arial, sans-serif
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 105px
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--body);
+            font-size: 15px;
+            line-height: 1.85;
+            overflow-x: hidden
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        button {
+            font: inherit
+        }
+
+        .ambient {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            overflow: hidden;
+            pointer-events: none;
+            background: radial-gradient(ellipse at 12% 8%, rgba(65, 108, 255, .12), transparent 34%), radial-gradient(ellipse at 88% 35%, rgba(27, 191, 235, .08), transparent 30%), var(--bg)
+        }
+
+        .ambient::before,
+        .ambient::after {
+            content: "";
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: .13;
+            animation: float 12s ease-in-out infinite alternate
+        }
+
+        .ambient::before {
+            top: 12%;
+            left: -250px;
+            background: #376bff
+        }
+
+        .ambient::after {
+            right: -250px;
+            top: 50%;
+            background: #08b9d7;
+            animation-delay: -5s
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(-25px)
+            }
+
+            to {
+                transform: translateY(50px)
+            }
+        }
+
+        .container {
+            width: min(var(--container), calc(100% - 44px));
+            margin: auto
+        }
+
+        /* Navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+            background: rgba(8, 11, 20, .83);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px)
+        }
+
+        .nav-inner {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--head);
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: -.7px
+        }
+
+        .brand-mark {
+            width: 39px;
+            height: 39px;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            color: #fff;
+            font-size: 17px;
+            background: linear-gradient(135deg, #48c9ff, #6366f1);
+            box-shadow: 0 0 24px rgba(85, 199, 255, .2)
+        }
+
+        .brand span:last-child {
+            color: var(--accent)
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 27px
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 600;
+            transition: color .25s
+        }
+
+        .nav-links a:hover {
+            color: var(--accent)
+        }
+
+        .nav-contact {
+            padding: 10px 17px;
+            border: 1px solid rgba(85, 199, 255, .4);
+            border-radius: 10px;
+            color: var(--accent) !important;
+            background: rgba(85, 199, 255, .06)
+        }
+
+        .menu-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            color: #fff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: var(--surface);
+            cursor: pointer;
+            font-size: 22px
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            padding: 94px 0 75px;
+            text-align: center;
+            border-bottom: 1px solid var(--border)
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: auto
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 7px 13px;
+            margin-bottom: 23px;
+            border: 1px solid rgba(85, 199, 255, .2);
+            border-radius: 50px;
+            background: rgba(85, 199, 255, .06);
+            color: var(--accent);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            text-transform: uppercase
+        }
+
+        .eyebrow-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--green);
+            box-shadow: 0 0 12px var(--green)
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--head);
+            line-height: 1.25;
+            letter-spacing: -.7px
+        }
+
+        h1 {
+            margin-bottom: 21px;
+            font-size: clamp(37px, 6vw, 64px);
+            font-weight: 700
+        }
+
+        .gradient-text {
+            color: var(--accent);
+            background: linear-gradient(100deg, #70d8ff, #8290ff 60%, #63f0d0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+
+        .hero-description {
+            max-width: 640px;
+            margin: auto;
+            color: var(--muted);
+            font-size: 16px;
+            line-height: 1.9
+        }
+
+        .hero-meta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px
+        }
+
+        .meta-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 13px;
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            background: rgba(255, 255, 255, .025);
+            color: #c5d0e0;
+            font-size: 12px
+        }
+
+        .meta-pill svg {
+            width: 15px;
+            height: 15px;
+            color: var(--accent)
+        }
+
+        /* Layout */
+        .policy-layout {
+            display: grid;
+            grid-template-columns: 270px minmax(0, 1fr);
+            align-items: start;
+            gap: 38px;
+            padding-top: 55px;
+            padding-bottom: 85px
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 105px
+        }
+
+        .sidebar-card {
+            padding: 23px 17px;
+            border: 1px solid var(--border);
+            border-radius: 17px;
+            background: rgba(16, 21, 34, .82);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, .12)
+        }
+
+        .sidebar-heading {
+            padding: 0 10px 15px;
+            color: #e5edfa;
+            font-family: var(--head);
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        .toc {
+            display: flex;
+            flex-direction: column;
+            gap: 4px
+        }
+
+        .toc a {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            padding: 10px;
+            border-radius: 8px;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.5;
+            transition: background .2s, color .2s
+        }
+
+        .toc a span {
+            color: #64748b;
+            font-size: 11px;
+            font-weight: 700;
+            min-width: 19px
+        }
+
+        .toc a:hover,
+        .toc a.active {
+            color: var(--accent);
+            background: rgba(85, 199, 255, .075)
+        }
+
+        .sidebar-help {
+            padding: 19px 10px 0;
+            margin-top: 19px;
+            border-top: 1px solid var(--border)
+        }
+
+        .sidebar-help strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 13px
+        }
+
+        .sidebar-help p {
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.8
+        }
+
+        .sidebar-help a {
+            display: inline-block;
+            margin-top: 9px;
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 700;
+            overflow-wrap: anywhere
+        }
+
+        /* Content */
+        .policy-content {
+            min-width: 0
+        }
+
+        .intro-card {
+            position: relative;
+            overflow: hidden;
+            padding: 28px 29px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(85, 199, 255, .19);
+            border-radius: 16px;
+            background: linear-gradient(125deg, rgba(85, 199, 255, .075), rgba(119, 116, 255, .055))
+        }
+
+        .intro-card::after {
+            content: "✦";
+            position: absolute;
+            top: -22px;
+            right: 20px;
+            color: rgba(85, 199, 255, .12);
+            font-size: 115px;
+            line-height: 1;
+            pointer-events: none
+        }
+
+        .intro-card h2 {
+            position: relative;
+            margin-bottom: 10px;
+            font-size: 20px
+        }
+
+        .intro-card p {
+            position: relative;
+            max-width: 700px;
+            color: #b1bfd2;
+            font-size: 13px
+        }
+
+        .policy-section {
+            padding: 30px;
+            margin-bottom: 17px;
+            scroll-margin-top: 105px;
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            background: rgba(16, 21, 34, .78);
+            transition: border-color .25s
+        }
+
+        .policy-section:hover {
+            border-color: rgba(85, 199, 255, .24)
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 17px
+        }
+
+        .section-number {
+            flex: 0 0 40px;
+            width: 40px;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(85, 199, 255, .2);
+            border-radius: 11px;
+            background: rgba(85, 199, 255, .07);
+            color: var(--accent);
+            font-family: var(--head);
+            font-size: 13px;
+            font-weight: 700
+        }
+
+        .section-heading h2 {
+            padding-top: 5px;
+            font-size: 19px;
+            font-weight: 600
+        }
+
+        .policy-section p {
+            margin-bottom: 13px;
+            color: #aebbd0;
+            font-size: 13.5px;
+            line-height: 1.95
+        }
+
+        .policy-section p:last-child {
+            margin-bottom: 0
+        }
+
+        .policy-section strong {
+            color: #edf4ff;
+            font-weight: 600
+        }
+
+        .policy-section ul {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            padding: 0;
+            margin: 12px 0 16px;
+            list-style: none
+        }
+
+        .policy-section li {
+            position: relative;
+            padding-left: 23px;
+            color: #aebbd0;
+            font-size: 13.5px;
+            line-height: 1.9
+        }
+
+        .policy-section li::before {
+            content: "";
+            position: absolute;
+            left: 1px;
+            top: 11px;
+            width: 7px;
+            height: 7px;
+            border-radius: 2px;
+            transform: rotate(45deg);
+            background: var(--accent)
+        }
+
+        .policy-section a {
+            color: var(--accent);
+            overflow-wrap: anywhere;
+            transition: color .2s
+        }
+
+        .policy-section a:hover {
+            color: #a1e7ff;
+            text-decoration: underline
+        }
+
+        .email-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 17px;
+            padding: 20px;
+            margin-top: 18px;
+            border: 1px solid rgba(85, 199, 255, .2);
+            border-radius: 12px;
+            background: rgba(85, 199, 255, .045);
+            scroll-margin-top: 105px
+        }
+
+        .email-info {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            min-width: 0
+        }
+
+        .email-icon {
+            display: grid;
+            place-items: center;
+            flex: 0 0 43px;
+            width: 43px;
+            height: 43px;
+            border-radius: 12px;
+            background: rgba(85, 199, 255, .1);
+            color: var(--accent)
+        }
+
+        .email-icon svg {
+            width: 20px;
+            height: 20px
+        }
+
+        .email-info strong {
+            display: block;
+            margin-bottom: 3px;
+            font-size: 12px
+        }
+
+        .email-info a {
+            font-size: 12px
+        }
+
+        .email-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 11px 15px;
+            border: 0;
+            border-radius: 9px;
+            background: linear-gradient(110deg, #55c7ff, #8281ff);
+            color: #07101d !important;
+            font-size: 12px;
+            font-weight: 700;
+            transition: transform .2s, box-shadow .2s;
+            cursor: pointer;
+            text-decoration: none !important
+        }
+
+        .email-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 22px rgba(85, 199, 255, .2)
+        }
+
+        .email-button svg {
+            width: 15px;
+            height: 15px
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--border);
+            background: rgba(5, 8, 15, .65)
+        }
+
+        .footer-main {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding-top: 45px;
+            padding-bottom: 35px
+        }
+
+        .footer-brand {
+            max-width: 340px
+        }
+
+        .footer-brand p {
+            margin-top: 14px;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.9
+        }
+
+        .footer-links h3 {
+            margin-bottom: 13px;
+            font-size: 13px
+        }
+
+        .footer-links a {
+            display: block;
+            margin-bottom: 9px;
+            color: var(--muted);
+            font-size: 12px;
+            transition: color .2s
+        }
+
+        .footer-links a:hover {
+            color: var(--accent)
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding-top: 19px;
+            padding-bottom: 19px;
+            border-top: 1px solid var(--border);
+            color: #7f8ba0;
+            font-size: 11px
+        }
+
+        .footer-bottom a {
+            color: var(--accent)
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            animation: reveal .65s ease forwards
+        }
+
+        .reveal:nth-child(2) {
+            animation-delay: .08s
+        }
+
+        .reveal:nth-child(3) {
+            animation-delay: .14s
+        }
+
+        @keyframes reveal {
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @media(max-width:850px) {
+            .policy-layout {
+                grid-template-columns: 1fr;
+                gap: 27px;
+                padding-top: 30px
+            }
+
+            .sidebar {
+                position: static
+            }
+
+            .sidebar-card {
+                padding: 18px
+            }
+
+            .toc {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .sidebar-help {
+                display: none
+            }
+
+            .hero {
+                padding: 75px 0 58px
+            }
+        }
+
+        @media(max-width:600px) {
+            .container {
+                width: min(100% - 30px, var(--container))
+            }
+
+            .nav-inner {
+                min-height: 68px
+            }
+
+            .brand {
+                gap: 9px;
+                font-size: 17px
+            }
+
+            .brand-mark {
+                width: 35px;
+                height: 35px
+            }
+
+            .menu-toggle {
+                display: inline-flex
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 68px;
+                left: 0;
+                right: 0;
+                padding: 15px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 3px;
+                border-bottom: 1px solid var(--border);
+                background: #0b0f1a
+            }
+
+            .nav-links.open {
+                display: flex
+            }
+
+            .nav-links a {
+                padding: 12px
+            }
+
+            .nav-contact {
+                text-align: center
+            }
+
+            .hero {
+                padding: 60px 0 45px
+            }
+
+            h1 {
+                font-size: 39px
+            }
+
+            .hero-description {
+                font-size: 14px
+            }
+
+            .hero-meta {
+                gap: 8px
+            }
+
+            .meta-pill {
+                font-size: 11px
+            }
+
+            .toc {
+                grid-template-columns: 1fr
+            }
+
+            .policy-section {
+                padding: 21px 19px
+            }
+
+            .section-heading {
+                gap: 11px
+            }
+
+            .section-number {
+                flex-basis: 35px;
+                width: 35px;
+                height: 35px
+            }
+
+            .section-heading h2 {
+                font-size: 17px
+            }
+
+            .policy-section p,
+            .policy-section li {
+                font-size: 13px
+            }
+
+            .intro-card {
+                padding: 23px 20px
+            }
+
+            .email-card {
+                align-items: stretch
+            }
+
+            .email-button {
+                width: 100%
+            }
+
+            .footer-main {
+                gap: 28px
+            }
+
+            .footer-brand {
+                max-width: 100%
+            }
+
+            .footer-bottom {
+                align-items: flex-start;
+                flex-direction: column
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <div class="ambient" aria-hidden="true"></div>
+
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="brand" href="#top" aria-label="Tanzeel Ur Rehman home">
+                <span class="brand-mark">T</span>
+                <span>Tanzeel Ur <span>Rehman</span></span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="navLinks">☰</button>
+            <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+                <a href="#top">Home</a>
+                <a href="#who-we-are">About</a>
+                <a href="#contact">Contact</a>
+                <a class="nav-contact" href="mailto:gamedeveloper91561@gmail.com">Get in touch ↗</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content reveal">
+                <div class="eyebrow"><span class="eyebrow-dot"></span>Transparency &amp; Trust</div>
+                <h1><span class="gradient-text">Privacy Policy</span></h1>
+                <p class="hero-description">Your privacy matters. Discover how Tanzeel Ur Rehman collects, uses, stores,
+                    and protects your personal information when you interact with this website and these services.</p>
+                <div class="hero-meta">
+                    <span class="meta-pill">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="16" rx="2" />
+                            <path d="M16 3v4M8 3v4M3 10h18" />
+                        </svg>
+                        Last updated: August 26, 2026
+                    </span>
+                    <span class="meta-pill">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            aria-hidden="true">
+                            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z" />
+                            <path d="m9 12 2 2 4-4" />
+                        </svg>
+                        Privacy first
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <div class="container policy-layout">
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <div class="sidebar-heading">On this page</div>
+                    <nav class="toc" id="tableOfContents" aria-label="Policy sections">
+                        <a href="#who-we-are"><span>01</span> Who I Am</a>
+                        <a href="#information"><span>02</span> Information I Collect</a>
+                        <a href="#usage"><span>03</span> How I Use Information</a>
+                        <a href="#legal-bases"><span>04</span> Legal Bases</a>
+                        <a href="#sharing"><span>05</span> Sharing &amp; Processors</a>
+                        <a href="#retention"><span>06</span> Data Retention</a>
+                        <a href="#rights"><span>07</span> Your Rights</a>
+                        <a href="#security"><span>08</span> Security</a>
+                        <a href="#transfers"><span>09</span> International Transfers</a>
+                        <a href="#changes"><span>10</span> Policy Changes</a>
+                    </nav>
+                    <div class="sidebar-help">
+                        <strong>Have a privacy question?</strong>
+                        <p>Get in touch for help with your personal information.</p>
+                        <a href="mailto:gamedeveloper91561@gmail.com">Email me ↗</a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="policy-content">
+                <div class="intro-card reveal">
+                    <h2>Your information. Your trust.</h2>
+                    <p>This Privacy Policy explains how Tanzeel Ur Rehman handles personal information when you visit
+                        this website, make contact, request a quote, use the services offered, or apply for a role. I
+                        aim to handle your information responsibly and transparently.</p>
+                </div>
+
+                <section class="policy-section reveal" id="who-we-are">
+                    <div class="section-heading">
+                        <div class="section-number">01</div>
+                        <h2>Who I Am</h2>
+                    </div>
+                    <p>Tanzeel Ur Rehman ("I", "me", or "my") provides digital services including web development,
+                        mobile apps, games, SEO, ASO, social media, and paid advertising.</p>
+                    <p>This policy applies to this website and any enquiries made through it.</p>
+                    <p>If you have any questions about this policy or how your personal information is handled, you can
+                        contact me using the details below.</p>
+                    <div class="email-card" id="contact">
+                        <div class="email-info">
+                            <div class="email-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                                    <path d="m3 7 9 6 9-6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Privacy &amp; General Enquiries</strong>
+                                <a href="mailto:gamedeveloper91561@gmail.com">gamedeveloper91561@gmail.com</a>
+                            </div>
+                        </div>
+                        <a class="email-button" href="mailto:gamedeveloper91561@gmail.com">
+                            Contact Me
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M7 17 17 7M7 7h10v10" />
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="policy-section reveal" id="information">
+                    <div class="section-heading">
+                        <div class="section-number">02</div>
+                        <h2>Information I Collect</h2>
+                    </div>
+                    <p>Depending on how you interact with me, I may collect the following information:</p>
+                    <ul>
+                        <li><strong>Information you provide:</strong> your name, email address, phone number, company
+                            details, project requirements, messages, and job application materials, including CV or
+                            resume files.</li>
+                        <li><strong>Technical information:</strong> IP address, browser type, device information, pages
+                            visited, and referral URLs collected through server logs and, where applicable, cookies or
+                            similar technologies.</li>
+                        <li><strong>Communications:</strong> records of emails and form correspondence related to your
+                            enquiries, projects, support requests, or job applications.</li>
+                    </ul>
+                    <p>The information collected depends on the features you use and the information you choose to
+                        provide.</p>
+                </section>
+
+                <section class="policy-section reveal" id="usage">
+                    <div class="section-heading">
+                        <div class="section-number">03</div>
+                        <h2>How I Use Your Information</h2>
+                    </div>
+                    <p>I may use personal information to:</p>
+                    <ul>
+                        <li>Respond to contact requests, quote enquiries, and career enquiries.</li>
+                        <li>Review job applications and arrange interviews.</li>
+                        <li>Deliver agreed services, manage projects, and provide customer support.</li>
+                        <li>Improve website performance, functionality, security, and user experience.</li>
+                        <li>Send service-related updates where you have opted in or where permitted by applicable law.
+                        </li>
+                        <li>Meet legal obligations and help prevent fraud, abuse, or unauthorized activity.</li>
+                    </ul>
+                    <p>I use information for purposes consistent with the reason it was collected, subject to applicable
+                        legal requirements.</p>
+                </section>
+
+                <section class="policy-section reveal" id="legal-bases">
+                    <div class="section-heading">
+                        <div class="section-number">04</div>
+                        <h2>Legal Bases for Processing</h2>
+                    </div>
+                    <p>Depending on your location and the applicable privacy laws, I may process personal information on
+                        one or more of these bases:</p>
+                    <ul>
+                        <li><strong>Consent:</strong> where you have given permission for a specific use of your
+                            information.</li>
+                        <li><strong>Contractual necessity:</strong> where processing is necessary to provide requested
+                            services or take steps before entering into a contract.</li>
+                        <li><strong>Legitimate interests:</strong> where appropriate to operate, protect, and improve
+                            this website and my services, while respecting your rights.</li>
+                        <li><strong>Legal obligations:</strong> where processing is required to comply with applicable
+                            law.</li>
+                    </ul>
+                </section>
+
+                <section class="policy-section reveal" id="sharing">
+                    <div class="section-heading">
+                        <div class="section-number">05</div>
+                        <h2>Sharing &amp; Service Providers</h2>
+                    </div>
+                    <p><strong>I do not sell personal data.</strong> I may share relevant information with trusted
+                        service providers that help operate this website and my business.</p>
+                    <p>These providers may support:</p>
+                    <ul>
+                        <li>Website hosting and infrastructure.</li>
+                        <li>Business email and communications.</li>
+                        <li>Analytics and website performance monitoring.</li>
+                        <li>Recruitment and application management.</li>
+                        <li>Secure storage and other essential business operations.</li>
+                    </ul>
+                    <p>I seek to ensure that service providers handle information appropriately and are subject to
+                        relevant confidentiality and data protection obligations. I may also disclose information where
+                        required by law or necessary to protect legal rights and security.</p>
+                </section>
+
+                <section class="policy-section reveal" id="retention">
+                    <div class="section-heading">
+                        <div class="section-number">06</div>
+                        <h2>Data Retention</h2>
+                    </div>
+                    <p>I retain personal information only for as long as reasonably necessary to fulfil the purposes
+                        described in this policy, including providing services, handling enquiries, managing
+                        applications, maintaining security, and meeting legal obligations.</p>
+                    <p>Form submissions and job applications may be stored in administrative systems. Uploaded CV files
+                        are intended to be kept in private storage rather than being publicly accessible.</p>
+                    <p>Retention periods may vary depending on the type of information, the purpose for which it was
+                        collected, and applicable legal requirements. When information is no longer needed, I take
+                        appropriate steps to delete it or otherwise dispose of it securely.</p>
+                </section>
+
+                <section class="policy-section reveal" id="rights">
+                    <div class="section-heading">
+                        <div class="section-number">07</div>
+                        <h2>Your Privacy Rights</h2>
+                    </div>
+                    <p>Depending on your location and the privacy laws that apply, you may have the right to:</p>
+                    <ul>
+                        <li>Request access to the personal information I hold about you.</li>
+                        <li>Ask me to correct inaccurate or incomplete information.</li>
+                        <li>Request deletion of your personal information.</li>
+                        <li>Request restriction of certain processing activities.</li>
+                        <li>Object to certain types of processing where applicable.</li>
+                        <li>Withdraw consent where processing is based on consent.</li>
+                    </ul>
+                    <p>To make a request, contact me at <a
+                            href="mailto:gamedeveloper91561@gmail.com">gamedeveloper91561@gmail.com</a>. I may need to
+                        verify your identity before responding. Some requests may be subject to legal exceptions or
+                        limitations.</p>
+                    <p>Where applicable, you may also have the right to complain to your relevant data protection
+                        authority.</p>
+                </section>
+
+                <section class="policy-section reveal" id="security">
+                    <div class="section-heading">
+                        <div class="section-number">08</div>
+                        <h2>Security</h2>
+                    </div>
+                    <p>I use reasonable technical and organizational measures designed to protect personal information
+                        from unauthorized access, alteration, disclosure, or destruction.</p>
+                    <p>These measures may include:</p>
+                    <ul>
+                        <li>HTTPS encryption for information transmitted through this website.</li>
+                        <li>Access controls designed to limit access to authorized individuals.</li>
+                        <li>Secure server configuration and appropriate security practices.</li>
+                        <li>Private file storage for uploaded documents, where implemented.</li>
+                    </ul>
+                    <p>No method of transmission or electronic storage is completely secure. While I work to protect
+                        your information, I cannot guarantee absolute security.</p>
+                </section>
+
+                <section class="policy-section reveal" id="transfers">
+                    <div class="section-heading">
+                        <div class="section-number">09</div>
+                        <h2>International Data Transfers</h2>
+                    </div>
+                    <p>I serve clients worldwide. As a result, personal information may be processed or stored in
+                        countries other than the country where you reside, including countries where my service
+                        providers operate.</p>
+                    <p>Where required by applicable law, I aim to implement appropriate safeguards for international
+                        transfers of personal information.</p>
+                </section>
+
+                <section class="policy-section reveal" id="changes">
+                    <div class="section-heading">
+                        <div class="section-number">10</div>
+                        <h2>Changes to This Privacy Policy</h2>
+                    </div>
+                    <p>I may update this Privacy Policy from time to time to reflect changes in my practices, services,
+                        technology, or legal requirements.</p>
+                    <p>When I make changes, I will update the "Last updated" date displayed at the top of this page.
+                        Where required by law, I will provide additional notice of material changes.</p>
+                    <p>I encourage you to review this page periodically to stay informed about how personal information
+                        is handled.</p>
+                </section>
+
+                <div class="intro-card">
+                    <h2>I'm here to help.</h2>
+                    <p>Questions about your personal information or this Privacy Policy? Get in touch with Tanzeel Ur
+                        Rehman.</p>
+                    <div style="margin-top:18px;position:relative;z-index:1">
+                        <a class="email-button" href="mailto:gamedeveloper91561@gmail.com">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <path d="m3 7 9 6 9-6" />
+                            </svg>
+                            gamedeveloper91561@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a class="brand" href="#top">
+                    <span class="brand-mark">T</span>
+                    <span>Tanzeel Ur <span>Rehman</span></span>
+                </a>
+                <p>Technology That Moves Businesses Forward. Building digital experiences and technology solutions
+                    designed to help businesses grow.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="#top">Home</a>
+                <a href="#who-we-are">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <a href="#who-we-are">Privacy Policy</a>
+                <a href="mailto:gamedeveloper91561@gmail.com">Privacy Enquiries</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© <span id="currentYear">2026</span> Tanzeel Ur Rehman. All rights reserved.</p>
+            <p>Built with care. Designed for trust. <a href="mailto:gamedeveloper91561@gmail.com">Contact me ↗</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("open");
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        navLinks.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Open navigation menu");
+                menuToggle.textContent = "☰";
+            });
+        });
+
+        const sections = document.querySelectorAll(".policy-section");
+        const tocLinks = document.querySelectorAll(".toc a");
+
+        if ("IntersectionObserver" in window) {
+            const sectionObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tocLinks.forEach(function (link) {
+                            const active = link.getAttribute("href") === "#" + entry.target.id;
+                            link.classList.toggle("active", active);
+                            if (active) link.setAttribute("aria-current", "location");
+                            else link.removeAttribute("aria-current");
+                        });
+                    }
+                });
+            }, { rootMargin: "-15% 0px -70% 0px", threshold: 0 });
+            sections.forEach(function (s) { sectionObserver.observe(s); });
+        }
+    </script>
+</body>
+
+</html>
